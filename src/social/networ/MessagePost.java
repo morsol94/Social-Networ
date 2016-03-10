@@ -1,3 +1,4 @@
+package social.networ;
 import java.util.ArrayList;
 
 /**
@@ -32,5 +33,12 @@ public class MessagePost extends Post
     public String getText()
     {
         return message;
+    }
+    
+    public String printShortSummary()
+    {
+        String shortSummary = "Message post from " + getName();
+        
+        return shortSummary;
     }
 }

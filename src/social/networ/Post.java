@@ -1,3 +1,4 @@
+package social.networ;
 import java.util.ArrayList;
 
 /**
@@ -113,5 +114,11 @@ public class Post
         else {
             return seconds + " seconds ago";
         }
+    }
+    
+    public String getName()
+    {
+        String name = username;
+        return name;
     }
 }

@@ -1,3 +1,4 @@
+package social.networ;
 import java.util.ArrayList;
 
 /**
