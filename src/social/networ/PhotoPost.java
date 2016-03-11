@@ -47,4 +47,29 @@ public class PhotoPost extends Post
     {
         return caption;
     }
+    
+    /**
+     * Returns type of message and username
+     * 
+     * @return username of poster 
+     */
+        public String printShortSummary()
+    {
+        String shortSummary = "Photo post from ";
+        
+        shortSummary += super.printShortSummary();
+        
+        return shortSummary;
+    }
+
+    @Override
+    public void display()
+    {
+        System.out.println(getImageFile());
+        System.out.println(getCaption());
+        super.display(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+        
 }

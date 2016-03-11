@@ -121,4 +121,13 @@ public class Post
         String name = username;
         return name;
     }
+    
+    
+    public String printShortSummary()
+    {
+        
+        String shortSummary = getName();
+                      
+        return shortSummary;
+    }
 }

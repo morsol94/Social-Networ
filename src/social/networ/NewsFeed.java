@@ -49,4 +49,20 @@ public class NewsFeed
             System.out.println();   // empty line between posts
         }
     }
+    
+    
+    public void displayShortSummary()
+    {
+        
+        for(Post post : posts)
+        {            
+            System.out.println(post.printShortSummary());
+        }
+    }
+           
+    
+    public void addComment(Post post, String text)
+    {
+        post.addComment(text);
+    }
 }

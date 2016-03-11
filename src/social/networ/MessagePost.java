@@ -35,10 +35,33 @@ public class MessagePost extends Post
         return message;
     }
     
+    /**
+     * Returns type of post and poster
+     * 
+     * @return username of poster 
+     */
     public String printShortSummary()
-    {
-        String shortSummary = "Message post from " + getName();
+    {               
+        String shortSummary = "Message post from ";
+        
+        shortSummary += super.printShortSummary();
         
         return shortSummary;
     }
+    
+    public void displayMessagePost()
+    {
+        
+        this.getText();
+        
+        
+    }
+
+    @Override
+    public void display()
+    {
+        System.out.println(getText());
+        super.display(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
